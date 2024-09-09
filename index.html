@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="app.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+        screens:{
+      'xl':{'max':'1200px'},
+      'lg':{'max':'991px'},
+      'md':{'max':'767px'},
+      'sm':{'max':'550px'},
+      'xsm':{'max':'375px'},
+    },
+    extend: {
+          colors: {
+            buttonBlue: '#0147FF',
+            xWhite:'#F7F7F7'
+          },
+        }
+    }
+}
+  </script>
+</head>
+<body>
+    <header class="container min-h-screen min-w-[100vw] bg-[url('images/Left.png')] bg-no-repeat bg-cover bg-center">
+        <div class="max-w-[1200px]  mx-auto flex justify-between items-center pt-4">
+            <img src="./images/Group 255.png" alt="">
+            <nav>
+                <ul class="flex">
+                    <li>
+                        Galeria zdjęć
+                    </li>
+                    <li>
+                        FaQ
+                    </li>
+                </ul>
+            </nav>
+            <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg font-Roboto-flex">
+                Zadzwoń do nas
+            </button>
+        </div>
+        <div class="mt-[120px]  max-w-[1200px] mx-auto">
+            <h1 class="top-text text-7xl max-w-[590px] bebas">Sprzedajemy samochody z europy</h1>
+            <p class="roboto text-base max-w-[300px] mt-8 ">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
+            <div class="flex gap-6 mt-12">
+                <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg font-Roboto-flex">
+                    Zobacz zdjęcia
+                </button>
+                <button class="bg-xWhite px-6 py-3 text-buttonBlue border-[1px]  border-[#0147FF] rounded-lg font-Roboto-flex">
+                    Zadzwoń do nas
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section></section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
