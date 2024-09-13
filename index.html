@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Fonts -->
     <link rel="stylesheet" href="app.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -41,7 +43,7 @@
         <div class="max-w-[1200px]  mx-auto flex justify-between items-center pt-4">
             <img src="./images/Group 255.png" alt="">
             <nav>
-                <ul class="flex">
+                <ul class="flex gap-6">
                     <li>
                         Galeria zdjęć
                     </li>
@@ -58,20 +60,87 @@
             <h1 class="top-text text-7xl max-w-[590px] bebas">Sprzedajemy samochody z europy</h1>
             <p class="roboto text-base max-w-[300px] mt-8 ">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
             <div class="flex gap-6 mt-12">
-                <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg font-Roboto-flex">
+                <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg roboto">
                     Zobacz zdjęcia
                 </button>
-                <button class="bg-xWhite px-6 py-3 text-buttonBlue border-[1px]  border-[#0147FF] rounded-lg font-Roboto-flex">
+                <button class="bg-xWhite px-6 py-3 text-buttonBlue border-[1px]  border-[#0147FF] rounded-lg roboto">
                     Zadzwoń do nas
                 </button>
             </div>
         </div>
     </header>
-    <main>
-        <section></section>
-    </main>
-    <footer>
+    <main class="pt-20  max-w-[1200px] mx-auto mt-16    ">
+        <section>
+            <div>
+                <p class="roboto text-xl">Prezentacja firmy</p>
+                <h2 class="bebas text-[40px] mb-6">Zobacz naszą Galerię zdjęć</h2>
+                <div class="flex gap-12 roboto text-sm">
+                    <h3 class="text-buttonBlue">Samochody osobowe</h3>
+                    <h3>Samochody dostawcze</h3>
 
+                </div>
+            </div> 
+            <div class="swiper mySwiper max-w-[1200px] mx-auto mt-16 pb-16">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide ">
+                    <img src="./images/Images.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/Images (1).png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/Images (2).png" alt="">
+
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+    </main>
+
+
+    <footer class="w-full bg-[#282828] text-white">  
+      <div class="flex max-w-[1200px] mx-auto py-[88px]">
+        <div>
+          <h3 class="bebas text-2xl">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h3>
+          <h4 class="roboto">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</h4>
+          <button class="roboto flex items-center gap-3 underline  text-xl">
+              <p> Rozwiń</p>
+            <img src="./images/arrow.png" alt="arrow">
+          </button>
+        </div>
+        <div>
+          <h3 class="bebas text-2xl">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h3>
+          <h4 class="roboto">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</h4>
+          <button class="roboto flex items-center gap-3 underline  text-xl">
+              <p> Rozwiń</p>
+            <img src="./images/arrow.png" alt="arrow">
+          </button>
+        </div>
+ 
+      </div>
+      <div class="flex justify-between max-w-[1200px] mx-auto py-[24px]">
+        <p>Cars Spot</p>
+        <p class="underline">Polityka prywatności</p>
+      </div>
     </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 64,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop:true
+
+      });
+    </script>
 </body>
 </html>
