@@ -22,7 +22,7 @@
     tailwind.config = {
         theme: {
         screens:{
-      'xl':{'max':'1200px'},
+      'xl':{'max':'1220px'},
       'lg':{'max':'991px'},
       'md':{'max':'767px'},
       'sm':{'max':'550px'},
@@ -36,51 +36,52 @@
         }
     }
 }
+// lg:max-w-[747px] md:max-w-[530px] sm:max-w-[310px]
   </script>
 </head>
 <body>
-    <header class="container min-h-screen min-w-[100vw] bg-[url('images/Left.png')] bg-no-repeat bg-cover bg-center">
-        <div class="max-w-[1200px]  mx-auto flex justify-between items-center pt-4">
-            <img src="./images/Group 255.png" alt="">
+    <header class="container min-h-screen bg-[url('images/Left.png')] bg-no-repeat bg-cover bg-center ">
+        <div class="max-w-[1200px]  mx-auto flex justify-between items-center pt-4 xl:max-w-[80%] ">
+            <img class="sm:w-[120px]" src="./images/Group 255.png" alt="">
             <nav>
-                <ul class="flex gap-6">
-                    <li>
+                <ul class="flex gap-6 md:hidden">
+                    <li class="cursor-pointer">
                         Galeria zdjęć
                     </li>
-                    <li>
+                    <li class="cursor-pointer">
                         FaQ
                     </li>
                 </ul>
             </nav>
-            <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg font-Roboto-flex">
+            <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg font-Roboto-flex lg:px-4 lg:py-2 sm:px-2 sm:py-1">
                 Zadzwoń do nas
             </button>
         </div>
-        <div class="mt-[120px]  max-w-[1200px] mx-auto">
-            <h1 class="top-text text-7xl max-w-[590px] bebas">Sprzedajemy samochody z europy</h1>
-            <p class="roboto text-base max-w-[300px] mt-8 ">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
-            <div class="flex gap-6 mt-12">
-                <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg roboto">
+        <div class="mt-[120px]  max-w-[1200px] mx-auto xl:max-w-[80%]  md:mt-24">
+            <h1 class="top-text text-7xl max-w-[590px] bebas lg:text-5xl lg:max-w-[390px] sm:text-4xl sm:max-w-[300px]">Sprzedajemy samochody z europy</h1>
+            <p class="roboto text-base max-w-[300px] mt-8 lg:mt-6 sm:text-sm">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
+            <div class="flex gap-6 mt-12 lg:mt-8">
+                <button class="bg-buttonBlue px-6 py-3 text-xWhite rounded-lg roboto lg:px-4 lg:py-2 sm:px-2 sm:py-1 ">
                     Zobacz zdjęcia
                 </button>
-                <button class="bg-xWhite px-6 py-3 text-buttonBlue border-[1px]  border-[#0147FF] rounded-lg roboto">
+                <button class="bg-xWhite px-6 py-3 text-buttonBlue border-[1px]  border-[#0147FF] rounded-lg roboto lg:px-4 lg:py-2 sm:px-2 sm:py-1">
                     Zadzwoń do nas
                 </button>
             </div>
         </div>
     </header>
-    <main class="pt-20  max-w-[1200px] mx-auto mt-16    ">
+    <main class="pt-20  max-w-[1200px] mx-auto mt-16   xl:max-w-[80%] lg:pt-5">
         <section>
             <div>
                 <p class="roboto text-xl">Prezentacja firmy</p>
-                <h2 class="bebas text-[40px] mb-6">Zobacz naszą Galerię zdjęć</h2>
+                <h2 class="bebas text-[40px] mb-6 sm:text-3xl">Zobacz naszą Galerię zdjęć</h2>
                 <div class="flex gap-12 roboto text-sm">
-                    <h3 class="text-buttonBlue">Samochody osobowe</h3>
-                    <h3>Samochody dostawcze</h3>
+                    <h3 class="text-buttonBlue cursor-pointer">Samochody osobowe</h3>
+                    <h3 class="cursor-pointer">Samochody dostawcze</h3>
 
                 </div>
             </div> 
-            <div class="swiper mySwiper max-w-[1200px] mx-auto mt-16 pb-16">
+            <div class="swiper mySwiper max-w-[1200px] mx-auto mt-16 pb-16 xl:max-w-[80%]">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide ">
                     <img src="./images/Images.png" alt="">
@@ -99,29 +100,29 @@
     </main>
 
 
-    <footer class="w-full bg-[#282828] text-white">  
-      <div class="flex max-w-[1200px] mx-auto py-[88px]">
+    <footer class="w-full bg-[#282828] text-white ">  
+      <div class="flex max-w-[1200px] mx-auto py-[88px] xl:max-w-[80%] lg:flex-col lg:gap-4 lg:py-12  md:gap-6">
         <div>
-          <h3 class="bebas text-2xl">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h3>
-          <h4 class="roboto">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</h4>
-          <button class="roboto flex items-center gap-3 underline  text-xl">
+          <h3 class="bebas text-2xl sm:text-xl">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h3>
+          <h4 class="roboto sm:text-sm">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</h4>
+          <button class="roboto flex items-center gap-3 underline  text-xl sm:text-sm">
               <p> Rozwiń</p>
             <img src="./images/arrow.png" alt="arrow">
           </button>
         </div>
         <div>
-          <h3 class="bebas text-2xl">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h3>
-          <h4 class="roboto">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</h4>
-          <button class="roboto flex items-center gap-3 underline  text-xl">
+          <h3 class="bebas text-2xl sm:text-xl">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h3>
+          <h4 class="roboto sm:text-sm">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</h4>
+          <button class="roboto flex items-center gap-3 underline  text-xl sm:text-sm">
               <p> Rozwiń</p>
             <img src="./images/arrow.png" alt="arrow">
           </button>
         </div>
  
       </div>
-      <div class="flex justify-between max-w-[1200px] mx-auto py-[24px]">
-        <p>Cars Spot</p>
-        <p class="underline">Polityka prywatności</p>
+      <div class="flex justify-between max-w-[1200px] mx-auto py-[24px] xl:max-w-[80%]  ">
+        <p class="sm:text-sm">Cars Spot</p>
+        <p class="underline sm:text-sm">Polityka prywatności</p>
       </div>
     </footer>
 
@@ -132,12 +133,24 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 64,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+        330: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+     
+
         loop:true
 
       });
